@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+
+<title>Video Game Questionnaire</title>
+<link rel="shortcut icon" href="https://cs.neiu.edu/sp24_mbarouta/cs300/images/mb.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script src="js/myscript.java"></script>
+<script>
+	function validateFirstName()
+	{
+		let firstName = document.getElementById("fname").value;
+		if (firstName === "")
+		{
+			alert("First name must be filled out.");
+			return false;
+		}
+	}
+</script>
+</head>
+<body style="text-align:center;">
+
+
+<form name="MarkBarouta" action="" method=""> <!-- URL Destination (action used for providing a URL of data's destination) 
+and method (used to append file to URL or to send data to the sever as separate message) left blank -->
+
+<h1>Video Game Questionnaire</h1><p>&nbsp;</p>
+
+<fieldset><legend>
+<h3>What is your first name? </h3></legend>
+<input type="text" id="fname" size="50" maxlength="50" placeholder="Type answer here: "/><p>&nbsp;</p></fieldset><p>&nbsp;</p>
+
+<fieldset><legend>
+<h3>What is your favorite video game of all time? </h3></legend>
+<input type="text" name="question1" size="50" maxlength="50" placeholder="Type answer here: "/><p>&nbsp;</p></fieldset><p>&nbsp;</p>
+
+<fieldset><legend>
+<h3>What is your favorite video game console of all time? </h3></legend>
+<input type="text" name="question2" size="50" maxlength="50" placeholder="Type answer here: "/><p>&nbsp;</p></fieldset><p>&nbsp;</p>
+
+
+<fieldset><legend>
+<h3>Out of the following console types, which do you have the most experience with? (if any)</h3></legend>
+<input type="radio" name="consoleRadioQuestion" value ="Nintendo 64"/> Nintendo 64 <p>&nbsp;</p>
+<input type="radio" name="consoleRadioQuestion" value ="GameCube"/> GameCube <p>&nbsp;</p>
+<input type="radio" name="consoleRadioQuestion" value ="PlayStation"/> PlayStation <p>&nbsp;</p>
+<input type="radio" name="consoleRadioQuestion" value ="Xbox"/> Xbox <p>&nbsp;</p>
+<input type="radio" name="consoleRadioQuestion" value ="PC"/> PC <p>&nbsp;</p>
+<input type="radio" name="consoleRadioQuestion" value ="None of the following types"/> None of the following types <p>&nbsp;</p> </fieldset><p>&nbsp;</p>
+
+
+<fieldset><legend>
+<h3>Out of the following video game types, which do you prefer the most? (you may select more than one answer)</h3></legend>
+<input type="checkbox" name="gameTypeQuestion" value="FPS/TPS"/> First/Third Person Shooter <p>&nbsp;</p>
+<input type="checkbox" name="gameTypeQuestion" value="RTS"/> Real-time Strategy <p>&nbsp;</p>
+<input type="checkbox" name="gameTypeQuestion" value="Sandbox"/> Sandbox <p>&nbsp;</p>
+<input type="checkbox" name="gameTypeQuestion" value="MOBA"/> Multiplayer Online Battle Arena (MOBA) <p>&nbsp;</p>
+<input type="checkbox" name="gameTypeQuestion" value="Role-playing"/> Role-playing (RPG, ARPG, etc.) <p>&nbsp;</p>
+<input type="checkbox" name="gameTypeQuestion" value="Simulation and Sports"/> Simulation and Sports <p>&nbsp;</p>
+<input type="checkbox" name="gameTypeQuestion" value="Action-adventure"/> Action-adventure <p>&nbsp;</p>
+<input type="checkbox" name="gameTypeQuestion" value="Other"/> Other <p>&nbsp;</p> </fieldset> <p>&nbsp;</p>
+
+<fieldset><legend>
+<h3>Select a game out of the following list in which you have the most experience with (if any)</h3></legend>
+<select name="gameExperience" multiple="multiple" size="10">
+<optgroup label="FPS"><option>Counter-Strike</option><option>Valorant</option>
+<option>Apex Legends</option><option>Rainbow Six Siege</option></optgroup>
+
+<optgroup label="MOBA"><option>League of Legends</option><option>Dota 2</option><option>Smite</option></optgroup>
+<optgroup label="Sandbox"><option>Grand Theft Auto</option><option>Garry's Mod</option><option>Minecraft</option>
+<option>Terraria</option> </optgroup>
+<optgroup label="Game type not listed"><option>None</option></optgroup>
+</select> <p>&nbsp;</p> </fieldset> <p>&nbsp;</p>
+
+<fieldset><legend>
+<h3>If you had to choose one video game to play for the rest of your life, which video game would you choose and why?</h3></legend>
+<textarea name="chooseOne" rows="10" cols="75" placeholder="Enter your answer here..."></textarea><p>&nbsp;</p></fieldset>
+
+
+<input type="reset" value="Clear Form"/> <input type="submit" value="Submit Form" onclick="return validateFirstName()"/><button onclick="giveThanks()">Thank you!</button>
+</form><p>&nbsp;</p>
+
+
+<h3 style="font-size:24px;">Purpose of Form</h3>
+<p style="font-size:24px;">The reason I made this form is to display the fact that I understand the basic principles and techniques to create a functioning form. However,</br>
+the reason I chose the topic of video games is because they are something I can relate to and have grown up around. I believe video games can connect</br>
+people around the world and is a great and positive outlet used by many, so I figured it would make a great topic for my form.</p><p>&nbsp;</p>
+
+</body>
+</html>

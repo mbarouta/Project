@@ -1,0 +1,70 @@
+body
+{
+	background-color:#999999;
+	font-family: Verdana, Helvetica, Geneva, sans-serif;
+	font-size:12px;
+}
+
+#mainnav
+{
+		background-color:grey;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:20px;
+		padding:1%;
+		padding-bottom:500px;
+}
+
+.Banner
+{
+	background-color:#0000FF;
+	text-align: left;
+	margin-top:10px;
+	margin-bottom:1px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:10px;
+	padding-left:10px;
+	font-size:18px;
+	width:100%;
+	padding:1%;
+	padding-bottom:1px;
+
+	
+}
+
+.Navigation
+{
+	float:left;
+	background-color:#000080;
+	width:33%;
+	padding:10px;
+	padding-bottom:10px;
+	
+	
+	
+}
+
+.Content
+{
+	float:left;
+	width:67%;
+	background-color:#0096FF;
+	padding:10px;
+	padding-bottom:10px;
+	color:white;
+		
+	
+}
+
+.Footer
+{
+	background-color:#89CFF0;
+	text-align: left;
+	padding-top:1px;
+	padding-left:1px;
+	width:100%;
+	padding:1%;
+	padding-bottom:1px;
+	
+}
